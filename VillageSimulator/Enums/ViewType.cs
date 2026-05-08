@@ -1,0 +1,6 @@
+enum ViewType
+{
+    Overview,
+    Detail,
+
+}

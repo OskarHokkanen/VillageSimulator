@@ -1,0 +1,14 @@
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/bin/Debug/net10.0/VillageSimulator
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/bin/Debug/net10.0/VillageSimulator.deps.json
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/bin/Debug/net10.0/VillageSimulator.runtimeconfig.json
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/bin/Debug/net10.0/VillageSimulator.dll
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/bin/Debug/net10.0/VillageSimulator.pdb
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.AssemblyInfoInputs.cache
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.AssemblyInfo.cs
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.csproj.CoreCompileInputs.cache
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.dll
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/refint/VillageSimulator.dll
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.pdb
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.genruntimeconfig.cache
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/ref/VillageSimulator.dll
