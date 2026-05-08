@@ -12,3 +12,4 @@
 /Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.pdb
 /Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.genruntimeconfig.cache
 /Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/ref/VillageSimulator.dll
+/Users/oskar_hokkanen/development/VillageSimulator/VillageSimulator/obj/Debug/net10.0/VillageSimulator.sourcelink.json

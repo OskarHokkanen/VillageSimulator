@@ -21,10 +21,21 @@ class ConsoleUI
         Console.ForegroundColor = ConsoleColor.Green;
         var day = "Monday";
         var time = "12.54";
-        Console.Write($"--- Village Simulator ----- {day} ---- {time} ---");
+
+        RenderHeader();
         RenderCurrentView();
+        RenderFooter();
     }
 
+    private void RenderHeader()
+    {
+        Console.WriteLine("┌──────────────── Village Simulator ────────────────┐");
+    }
+
+    private void RenderFooter()
+    {
+        Console.WriteLine("├───────────────────────────────────────────────────┤\n|       Views: [O]verview | [D]etail | E[X]it       |\n└───────────────────────────────────────────────────┘");
+    }
 
     private void RenderCurrentView()
     {
@@ -41,18 +52,37 @@ class ConsoleUI
 
     private void RenderOverviewView()
     {
-        Console.ForegroundColor = ConsoleColor.White;
-        Console.WriteLine("This is the overview view...");
+        //|---------------------------------------------------|
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("|                                                   |");
+        Console.WriteLine("|                                                   |");
+        Console.WriteLine("|                      Overview                     |");
+        Console.WriteLine("|                                                   |");
+        Console.WriteLine("|                                                   |");
+        Console.WriteLine("|                                                   |");
     }
     private void RenderDetailView()
     {
-        Console.ForegroundColor = ConsoleColor.White;
-        Console.WriteLine("This is the detail view...");
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("|                                                   |");
+        Console.WriteLine("|                                                   |");
+        Console.WriteLine("|                       Detail                      |");
+        Console.WriteLine("|                                                   |");
+        Console.WriteLine("|                                                   |");
+        Console.WriteLine("|                                                   |");
     }
 
 
     // Subrendering methods:
     /*
+
+┌──────────────── Village Simulator ────────────────┐
+|
+|
+|---------------------------------------------------|
+├───────────────────────────────────────────────────┤
+|       Views: [O]verview | [D]etail | E[X]it       |
+└───────────────────────────────────────────────────┘
     RenderVillageOverview() - Show resources, villager count, current day/time
     RenderVillagerDetails() - Show individual villager stats
     RenderResourceStatus() - Detailed resource breakdown
