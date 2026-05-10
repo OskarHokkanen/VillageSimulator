@@ -8,12 +8,14 @@ Console.WriteLine("Hello, my name is world, what is your name?");
 Villager oskar = new Villager("Oskar", 27, JobType.Farmer);
 
 TimeKeeper timeKeeper = new TimeKeeper(new DateTime(1999, 03, 20, 0, 0, 0));
-ConsoleUI consoleUI = new ConsoleUI();
+ConsoleUI consoleUI = new ConsoleUI(timeKeeper);
 bool isRunning = true;
 while (isRunning)
 {
 
     consoleUI.Render();
+    timeKeeper.AdvanceTime(10);
+
 
     if (Console.KeyAvailable)
     {

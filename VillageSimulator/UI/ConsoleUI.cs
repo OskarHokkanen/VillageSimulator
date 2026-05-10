@@ -1,13 +1,16 @@
 using VillageSimulator.Enums;
+using VillageSimulator.Models;
 
 namespace VillageSimulator.UI;
 
 class ConsoleUI
 {
     public ViewType CurrentView { get; set; }
+    public TimeKeeper TK { get; private set; }
 
-    public ConsoleUI()
+    public ConsoleUI(TimeKeeper timeKeeper)
     {
+        TK = timeKeeper;
         CurrentView = ViewType.Overview;
     }
 
@@ -30,6 +33,7 @@ class ConsoleUI
     private void RenderHeader()
     {
         Console.WriteLine("┌──────────────── Village Simulator ────────────────┐");
+        Console.WriteLine($"├────{TK.GetDayString()}───{TK.GetTimeString()}────┤");
     }
 
     private void RenderFooter()

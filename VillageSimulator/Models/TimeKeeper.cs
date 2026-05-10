@@ -4,7 +4,7 @@ class TimeKeeper
 {
     public DateTime StartDateTime { get; private set; }
     public DateTime CurrentDateTime { get; private set; }
-    public TimeKeeper(DateTime startDate)
+    public TimeKeeper(DateTime startDateTime)
     {
         StartDateTime = startDateTime;
         CurrentDateTime = startDateTime;
@@ -14,6 +14,16 @@ class TimeKeeper
     {
         CurrentDateTime = CurrentDateTime.AddMinutes(minutes);
 
+    }
+
+    public string GetTimeString()
+    {
+        return $"{CurrentDateTime.Hour}:{CurrentDateTime.Minute}";
+    }
+
+    public string GetDayString()
+    {
+        return $"{CurrentDateTime.DayOfWeek}";
     }
 
 }
