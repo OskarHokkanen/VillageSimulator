@@ -4,6 +4,7 @@ class TimeKeeper
 {
     public DateTime StartDateTime { get; private set; }
     public DateTime CurrentDateTime { get; private set; }
+    private int lastCheckedDay;
     public TimeKeeper(DateTime startDateTime)
     {
         StartDateTime = startDateTime;
@@ -16,9 +17,21 @@ class TimeKeeper
 
     }
 
+    public bool IsNewDay()
+    {
+        if (CurrentDateTime.Day != lastCheckedDay)
+        {
+            lastCheckedDay = CurrentDateTime.Day;
+            return true;
+        }
+        return false;
+    }
+    // Formated string methods
     public string GetTimeString()
     {
-        return $"{CurrentDateTime.Hour}:{CurrentDateTime.Minute}";
+        var hour = CurrentDateTime.Hour < 10 ? $"0{CurrentDateTime.Hour}" : $"{CurrentDateTime.Hour}";
+        var minute = CurrentDateTime.Minute < 10 ? $"0{CurrentDateTime.Minute}" : $"{CurrentDateTime.Minute}";
+        return $"{hour}:{minute}";
     }
 
     public string GetDayString()

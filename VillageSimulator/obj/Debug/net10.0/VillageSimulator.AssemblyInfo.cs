@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VillageSimulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1d3485d38c342c79640719ee99864a32e0752ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bec163a63bd6b3eb665ede5e0e5d5e8275705bb0")]
 [assembly: System.Reflection.AssemblyProductAttribute("VillageSimulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VillageSimulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

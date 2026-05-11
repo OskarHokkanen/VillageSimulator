@@ -7,10 +7,12 @@ class ConsoleUI
 {
     public ViewType CurrentView { get; set; }
     public TimeKeeper TK { get; private set; }
+    public ResourceManager RM { get; private set; }
 
-    public ConsoleUI(TimeKeeper timeKeeper)
+    public ConsoleUI(TimeKeeper timeKeeper, ResourceManager resourceManager)
     {
         TK = timeKeeper;
+        RM = resourceManager;
         CurrentView = ViewType.Overview;
     }
 
@@ -33,7 +35,7 @@ class ConsoleUI
     private void RenderHeader()
     {
         Console.WriteLine("┌──────────────── Village Simulator ────────────────┐");
-        Console.WriteLine($"├────{TK.GetDayString()}───{TK.GetTimeString()}────┤");
+        Console.WriteLine($"| {TK.GetDayString()} {TK.GetTimeString()}                                    |");
     }
 
     private void RenderFooter()
@@ -56,13 +58,16 @@ class ConsoleUI
 
     private void RenderOverviewView()
     {
+        var gold = RM.GetResourceQuantityOfType(ResourceType.Gold);
+        var wood = RM.GetResourceQuantityOfType(ResourceType.Wood);
+        var food = RM.GetResourceQuantityOfType(ResourceType.Food);
         //|---------------------------------------------------|
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("|                                                   |");
         Console.WriteLine("|                                                   |");
         Console.WriteLine("|                      Overview                     |");
         Console.WriteLine("|                                                   |");
-        Console.WriteLine("|                                                   |");
+        Console.WriteLine($"| Gold: {gold}, Wood: {wood}, Food: {food} |");
         Console.WriteLine("|                                                   |");
     }
     private void RenderDetailView()
@@ -76,6 +81,23 @@ class ConsoleUI
         Console.WriteLine("|                                                   |");
     }
 
+
+    // Helper method for formatting terminal output
+
+    private void FormattedPrintToConsole(string stringToPrint)
+    {
+        string topLeftCorner;
+
+        string topRightCorner = "┐";
+        string bottomLeftCorner;
+        string bottomRightCorner = "┘";
+        string sideEdge = "|";
+        int lengthOfOutput = 53;
+        int lengthOfString = stringToPrint.Length;
+
+
+
+    }
 
     // Subrendering methods:
     /*
